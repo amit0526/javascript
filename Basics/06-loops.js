@@ -39,6 +39,20 @@ for (let i = 1; i <= 10; i++){
 let fact = 1;
 for (let i = 1; i <= 10; i++){
   fact = fact * i;
-  console.log(fact);
+  // console.log(fact);
 }
 
+// 58.Count digits in a number.
+let num = 12345;
+let count = 0;
+
+if (num === 0) {
+  count = 1;
+} else {
+  num = Math.abs(num);
+  while (num > 0) {
+    num = Math.floor(num / 10);
+    count++;
+  }
+}
+console.log(count);
