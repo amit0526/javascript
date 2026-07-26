@@ -42,13 +42,12 @@ for (let i = 1; i <= targetNum; i++) {
 // console.log(fact);
 
 // 58.Count digits in a number.
-let num = 12345;
+let num = 1234561;
 let count = 0;
-
-for (let temp = Math.abs(num); temp > 0; temp = Math.floor(temp / 10)) {
+while (num>0) {
+  num = Math.floor(num / 10);
   count++;
 }
-count = count || 1;
 // console.log(count);
 
 // 59.Reverse a number.
@@ -70,7 +69,7 @@ let totalTerms = 10;
 
 for (let i = 1; i <= totalTerms; i++) {
   // console.log(n1);
-  nextTerm = n1 + n2;
-  n1 = n2;
-  n2 = nextTerm;
+  // nextTerm = n1 + n2;
+  // n1 = n2;
+  // n2 = nextTerm;
 }
