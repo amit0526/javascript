@@ -48,7 +48,7 @@ while (num>0) {
   num = Math.floor(num / 10);
   count++;
 }
-console.log(count);
+// console.log(count);
 
 // 59.Reverse a number.
 let originalNum = 12345;
