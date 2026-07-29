@@ -11,8 +11,7 @@ function calculate (targetNum) {
 
  if (targetNum < 0) {
    throw new Error("Enter a non-negative number!");
-   
-  }
+ }
   
   let fact = 1;
 
@@ -20,15 +19,18 @@ function calculate (targetNum) {
     fact *= i;
     
   }
-  return fact;
+
+     return fact;
 }
 
-try {
-  const result = calculate(targetNum);
-  console.log(`Factorial of ${targetNum} is ${result}`);
+  try {
+   const result = calculate(targetNum);
+   console.log(`Factorial of ${targetNum} is ${result}`);
 
- } catch (error) {
-  console.log(error.message);
- }
+  } catch (error) {
+      console.log(error.message);
+  }
+ 
+
 
   
