@@ -14,7 +14,7 @@ function maximum(arr) {
 let arrayofNumbers = [40, 55, 10, 198, 99, 45];
 
 function findBiggestNumber(arrayofNumbers) {
-  if (!arrayofNumber && arrayofNumbers.length === 0) {
+  if (!arrayofNumber || arrayofNumbers.length === 0) {
     throw new Error(`We need some numbers in the array!`);
   }
   let biggestNumber = arrayofNumbers[0];
