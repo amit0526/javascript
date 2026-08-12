@@ -6,14 +6,13 @@ let exponent = Number(prompt("Enter the exponent nunmber: "));
 
 function power (base, exponent) {
 
-  if (isNan(base)) {
-
-    throw new Error("Please enter vaild numbers for base and exponent.");
-  } 
-
   if (exponent < 0 || base < 0) {
     throw new Error("please enter a non-negative number for base and exponent.");
-   }
+  }
+  
+  if (isNaN(base) || isNaN(exponent)) {
+    throw new Error("Please enter valid numbers for base and exponent.");
+  }
   
   let result = 1;
     
