@@ -1,21 +1,21 @@
-// // Q10.Write a function that checks if a string is palindrome or not.
+// Q10.Write a function that checks if a string is palindrome or not.
 
-// const prompt = require('prompt-sync')();
-// const str = prompt("Enter your string: ");
+const prompt = require('prompt-sync')();
+const str = prompt("Enter your string: ");
 
-// function isPalindrome(str) {
-//   str = str.toLowerCase();
-//   return str === str.split('').reverse().join('');
-// }
-// const check = isPalindrome(str);
-// console.log(check)
+function isPalindrome(str) {
+  str = str.toLowerCase();
+  return str === str.split('').reverse().join('');
+}
+const check = isPalindrome(str);
+console.log(check)
 
-// // Method 2 (arrow function)
+// Method 2 (arrow function)
 
-// const str1 = prompt('Enter your str: ')
+const str1 = prompt('Enter your str: ')
 
-// const isPalindrome1 = str1 => str1 === str1.split('').reverse().join('');
-// console.log(isPalindrome1(str1.toLowerCase()));
+const isPalindrome1 = str1 => str1 === str1.split('').reverse().join('');
+console.log(isPalindrome1(str1.toLowerCase()));
 
 // Method 3 (Two Pointers)
 
