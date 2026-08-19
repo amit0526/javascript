@@ -43,31 +43,41 @@ function checkCharAscii(char) {
     return`${char} Space`
   }
 }
-const char = prompt("Enter a character: ");
-console.log(checkCharAscii(char));
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const char = prompt("Enter a character: ");
+// console.log(checkCharAscii(char));
 
 
 // 2.Check Triangle Type Using Sides and Angles.
+ 
+const a = Number(prompt("Enter side a:"));
+const b = Number(prompt("Enter side b:"));
+const c = Number(prompt("Enter side c:"));
+  
+function checkTriangle(a, b, c) {
 
+  if (a + b <= c || a + c <= b || b + c <= a) {
+    return "Not a valid triangle";
+}
+
+  const sides = [a, b, c].sort((x, y) => x - y);
+  const x = sides[0];
+  const y = sides[1];
+  const z = sides[2];
+  
+  if ((x * x) + (y * y) === (z * z)) {
+    return "Right-angled triangle";
+  } else if (a  === b && b === c) {
+    return "Equilateral triangle";
+  } else if (a === b || a === c || b === c) {
+    return "Isosceles triangle";
+  } else {
+    return "Scalene triangle";
+  }
+}
+
+console.log(checkTriangle(a, b, c));
 
 // 3.Calculate Income Tax Based on Slabs
 
-// 4.Calculate Electricity Bill.
 
-// 5.
+
