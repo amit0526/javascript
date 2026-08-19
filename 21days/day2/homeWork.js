@@ -49,9 +49,9 @@ function checkCharAscii(char) {
 
 // 2.Check Triangle Type Using Sides and Angles.
  
-const a = Number(prompt("Enter side a:"));
-const b = Number(prompt("Enter side b:"));
-const c = Number(prompt("Enter side c:"));
+// const a = Number(prompt("Enter side a:"));
+// const b = Number(prompt("Enter side b:"));
+// const c = Number(prompt("Enter side c:"));
   
 function checkTriangle(a, b, c) {
 
@@ -75,9 +75,28 @@ function checkTriangle(a, b, c) {
   }
 }
 
-console.log(checkTriangle(a, b, c));
+// console.log(checkTriangle(a, b, c));
+
 
 // 3.Calculate Income Tax Based on Slabs
 
+const income = Number(prompt("Enter your income: "));
 
+function calculateincomeTax(income) {
+  
+  if (income <= 250000) {
+       return 'No tax';
+
+  } else if(income <=500000 ) {
+    return (income - 250000) * 0.05;
+  
+  } else if (income <=1000000) {
+    return (250000 * 0.05) + ((income - 500000) * 0.20);
+  
+  } else {
+    return (250000 * 0.05) + (500000 * 0.20) + ((income - 1000000) * 0.30);
+  }
+}
+
+console.log(calculateincomeTax(income));
 
